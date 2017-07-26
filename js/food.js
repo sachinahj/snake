@@ -1,6 +1,5 @@
 class Food {
 	constructor(grid) {
-		console.log("food | constructor");
     this.grid = grid;
   }
 

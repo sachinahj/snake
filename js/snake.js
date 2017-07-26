@@ -1,6 +1,5 @@
 class Snake {
 	constructor(grid, food) {
-		console.log("snake | constructor");
 		this.grid = grid;
 		this.food = food;
 	}

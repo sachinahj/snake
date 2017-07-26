@@ -3,7 +3,6 @@ class Game {
 		this.speed = 1;
 		this.gameover = false;
 		this.input = null;
-		console.log("game | constructor");
 
 		this.grid = new Grid(height, width);
 
@@ -20,7 +19,6 @@ class Game {
 	}
 
 	start() {
-		console.log("game | start");
 		this._listeners();
 
 		const loop = () => {
@@ -28,7 +26,6 @@ class Game {
 
 			if (!this.gameover) {
 				const speed = this._speed();
-				console.log("speed", speed);
 				setTimeout(loop, speed);
 			} else {
 				const gameover = document.createElement('h3');

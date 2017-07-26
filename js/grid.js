@@ -1,6 +1,5 @@
 class Grid {
 	constructor(height, width) {
-		console.log("grid | constructor");
 		this.height = height;
 		this.width = width;
 
@@ -19,7 +18,7 @@ class Grid {
 
 			grid.append(row);
 		}
-		
+
 		this.element = grid;
 	}
 
